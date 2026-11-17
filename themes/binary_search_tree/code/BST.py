@@ -27,3 +27,10 @@ def find(x, node):
         return find(x, node.left)
     else:
         return find(x, node.right)
+
+
+
+def count(head):
+    if head is None:
+        return 0
+    return 1 + count(head.left) + count(head.right)
